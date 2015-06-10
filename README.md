@@ -22,11 +22,13 @@ This is how the game should be laid out:
 	Hand & Tokens
     (Deck)
 
-At the start of the game, you must pick a side: Union or Confederate. 
+**At the start of the game**, you must pick a side: Union or Confederate. 
 
 The team that goes first is determined by a best of three rocks, paper, scissors match.
 
-Then, two Battle cards are drawn from the battle deck and placed in the middle. Six cards are drawn from each deck and placed in the hand. The game begins.	At the start of each turn, draw two tokens and one card.
+Then, two Battle cards are drawn from the battle deck and placed in the middle. Six cards are drawn from each deck and placed in the hand. The game begins.
+
+**At the start of each turn**, draw two tokens and one card.
 
 -	You may trade in your tokens to move a Soldier or General from your Hand to your Field.
 -	Once you place a Soldier or General on the Field, you must activate its special ability (if applicable)
