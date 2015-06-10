@@ -1,0 +1,9 @@
+# Build settings
+gems:
+- github-pages
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+markdown: kramdown
+permalink: pretty
+exclude: ["node_modules", "Rakefile"]
