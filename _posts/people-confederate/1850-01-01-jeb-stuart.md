@@ -6,7 +6,7 @@ name: J.E.B. Stuart
 type: General
 nickname: Knight of the Golden Spurs
 
-image: /media/JEBStuart.jpg
+image: ../media/JEBStuart.jpg
 
 energy: 3
 

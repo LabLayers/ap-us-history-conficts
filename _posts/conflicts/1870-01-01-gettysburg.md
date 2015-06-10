@@ -3,7 +3,7 @@ categories: conflicts
 
 name: Gettysburg, Pennsylvania
 
-image: /media/Gettysburg.jpg
+image: ../media/Gettysburg.jpg
 
 soldiers:
 generals:

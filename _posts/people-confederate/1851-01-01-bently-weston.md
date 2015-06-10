@@ -6,7 +6,7 @@ name: Bentley Weston
 type: Soldier
 nickname: Cavalry Private
 
-image: /media/BentleyWeston.png
+image: ../media/BentleyWeston.png
 
 energy: 1
 ---

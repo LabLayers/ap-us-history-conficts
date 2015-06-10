@@ -6,7 +6,7 @@ name: Thomas Kitchen
 type: Soldier
 nickname: Possible Chef?
 
-image: /media/ThomasKitchen.png
+image: ../media/ThomasKitchen.png
 
 energy: 1
 ---

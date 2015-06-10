@@ -6,7 +6,7 @@ name: Robert E Lee
 type: General
 nickname: The Marble Man
 
-image: /media/RobertELee.png
+image: ../media/RobertELee.png
 
 energy: 3
 

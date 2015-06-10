@@ -6,7 +6,7 @@ name: William Rockwell
 type: Soldier
 nickname: North Carolina Volunteer
 
-image: /media/WilliamRockwell.png
+image: ../media/WilliamRockwell.png
 
 energy: 1
 ---

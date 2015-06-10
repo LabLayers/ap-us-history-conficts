@@ -6,7 +6,7 @@ name: Jefferson Davis
 type: General
 nickname:  President of the Confederates
 
-image: /media/JeffersonDavis.png
+image: ../media/JeffersonDavis.png
 
 energy: 5
 

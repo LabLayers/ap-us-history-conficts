@@ -6,7 +6,7 @@ name: Ed Alexander
 type: General
 nickname: King of the Railroads
 
-image: /media/EdwardAlexander.png
+image: ../media/EdwardAlexander.png
 
 energy: 4
 

@@ -6,7 +6,7 @@ name: William Askew
 type: Soldier
 nickname: Georgia Guard
 
-image: /media/WilliamAskew.png
+image: ../media/WilliamAskew.png
 
 energy: 2
 ---

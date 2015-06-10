@@ -3,7 +3,7 @@ categories: conflicts
 
 name: Fort Henry, Arkansas
 
-image: /media/FortHenry.png
+image: ../media/FortHenry.png
 
 soldiers:
 generals:

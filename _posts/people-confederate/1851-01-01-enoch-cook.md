@@ -6,7 +6,7 @@ name: Enoch Cook, Jr.
 type: Soldier
 nickname: Sharp Shooter
 
-image: /media/EnochHooperCook.png
+image: ../media/EnochHooperCook.png
 
 energy: 2
 ---

@@ -6,7 +6,7 @@ name: John White
 type: Soldier
 nickname: Drummer Boy
 
-image: /media/JohnWhite.png
+image: ../media/JohnWhite.png
 
 energy: 1
 ---
