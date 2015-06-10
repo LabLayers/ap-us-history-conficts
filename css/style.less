@@ -175,3 +175,57 @@ card.union {
     background: @union;
   }
 }
+
+card.conflict {
+  color: @conflict;
+  box-shadow: 0 0 0 2pt @conflict inset;
+  picture {
+    border-color: @conflict;
+  }
+  quote, energy {
+    background: @conflict;
+  }
+  width: 3.5in;
+  height: 2.5in;
+  display: inline-block;
+  position: relative;
+  margin: @padding/2;
+  vertical-align: top;
+  header {
+    display: block;
+    padding: @padding*2 @padding @padding 0.6in;
+    position: relative;
+    .fa-certificate {
+      opacity: 1;
+      position: absolute;
+      font-size: 39pt;
+      left: .10in;
+      top: 0.05in;
+      -webkit-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+      text-shadow: 2pt 2pt 2pt rgba(0, 0, 0, 0.25);
+    }
+  }
+  type {
+    width: 1.25;
+  }
+  energy {
+    position: absolute;
+    top: 0.1in;
+    left: 0.1in;
+    width: .48in;
+    height: .48in;
+    line-height: .45in;
+    font-size: 1.5em;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    background: none;
+    color: white;
+    box-shadow: none;
+  }
+}

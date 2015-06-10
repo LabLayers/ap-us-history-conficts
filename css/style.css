@@ -295,3 +295,56 @@ card.union quote,
 card.union energy {
   background: #00577a;
 }
+card.conflict {
+  color: #5f006c;
+  box-shadow: 0 0 0 2pt #5f006c inset;
+  width: 3.5in;
+  height: 2.5in;
+  display: inline-block;
+  position: relative;
+  margin: 2pt;
+  vertical-align: top;
+}
+card.conflict picture {
+  border-color: #5f006c;
+}
+card.conflict quote,
+card.conflict energy {
+  background: #5f006c;
+}
+card.conflict header {
+  display: block;
+  padding: 8pt 4pt 4pt 0.6in;
+  position: relative;
+}
+card.conflict header .fa-certificate {
+  opacity: 1;
+  position: absolute;
+  font-size: 39pt;
+  left: .10in;
+  top: 0.05in;
+  -webkit-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  text-shadow: 2pt 2pt 2pt rgba(0, 0, 0, 0.25);
+}
+card.conflict type {
+  width: 1.25;
+}
+card.conflict energy {
+  position: absolute;
+  top: 0.1in;
+  left: 0.1in;
+  width: .48in;
+  height: .48in;
+  line-height: .45in;
+  font-size: 1.5em;
+  border-radius: 50%;
+  background-color: black;
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: bold;
+  background: none;
+  color: white;
+  box-shadow: none;
+}

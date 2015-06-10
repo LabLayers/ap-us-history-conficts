@@ -1,0 +1,26 @@
+---
+layout: default
+title: "Conflicts"
+---
+
+<!-- Boop -->
+
+{% for card in site.categories.conflicts %}
+  <card class="conflict">
+    <header>
+      <i class="fa fa-certificate"></i>
+      <energy> {{ card.total }} </energy>
+      <name>
+        {{ card.name }}
+      </name>
+    </header>
+    <type>Battle</type>
+    <picture style="background-image: url({{ card.image }});"></picture>
+    <content>
+      {{ card.content }}
+    </content>
+    <footer>
+      {{ site.footer }}
+    </footer>
+  </card>
+{% endfor %}
