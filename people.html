@@ -21,15 +21,17 @@ title: "People"
     <type>{{ card.type }}</type>
     <picture style="background-image: url({{ card.image }});"></picture>
     <energy> {{ card.energy }} </energy>
-    <quote>
-      <i class="fa fa-quote-left"></i>
-      {{ card.quote }}
-      {% if card.source %}
-        <quote-source>
-          &dash; {{ card.source }}
-        </quote-source>
-      {% endif %}
-    </quote>
+    {% if card.quote %}
+      <quote>
+        <i class="fa fa-quote-left"></i>
+        {{ card.quote }}
+        {% if card.source %}
+          <quote-source>
+            &dash; {{ card.source }}
+          </quote-source>
+        {% endif %}
+      </quote>
+    {% endif %}
     <content>
       {{ card.content }}
     </content>
