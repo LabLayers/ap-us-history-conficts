@@ -142,20 +142,35 @@ card {
   position: relative;
   border: 10pt solid #e5ecef;
   margin: 2pt;
-  box-shadow: 0 0 0 2pt inset;
+  box-shadow: 0 0 0 2pt black inset;
+  vertical-align: top;
 }
 card header {
   display: block;
   padding: 8pt 4pt 4pt 0.6in;
+  position: relative;
+}
+card header .fa-hand-o-right {
+  opacity: 0.3;
+  position: absolute;
+  font-size: 23pt;
+  left: .158in;
+  top: 0.05in;
+  -webkit-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+          transform: rotate(-20deg);
 }
 card header name {
   display: block;
   font-family: Clarendon LT Std;
   font-weight: normal;
   font-size: 12pt;
+  margin-top: 1pt;
 }
 card header nickname {
   display: block;
+  font-family: Georgia;
+  opacity: 0.7;
 }
 card type {
   -webkit-transform: rotate(-90deg);
@@ -166,14 +181,16 @@ card type {
       -ms-transform-origin: top left;
           transform-origin: top left;
   position: absolute;
-  top: 1.4in;
-  left: .1in;
+  top: 1.7in;
+  left: 0.09in;
   font-size: 15pt;
   font-weight: bold;
+  width: 1in;
+  text-align: center;
 }
 card energy {
   position: absolute;
-  top: 0.1in;
+  top: 0.25in;
   left: 0.1in;
   width: .4in;
   height: .4in;
@@ -195,6 +212,37 @@ card picture {
   background-size: cover;
   margin-left: 21pt;
 }
+card content {
+  padding: 4pt 4pt 4pt 21pt;
+  display: block;
+  text-align: left;
+  font-family: Georgia;
+  position: relative;
+  font-size: 9pt;
+}
+card content strong {
+  font-family: Lora;
+  font-style: italic;
+  font-weight: bold;
+}
+card content .fa-bolt {
+  opacity: 0.3;
+  position: absolute;
+  font-size: 25pt;
+  left: 0.15in;
+  top: .05in;
+}
+card content code {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  width: 1em;
+  display: inline-block;
+  height: 1em;
+  text-align: center;
+  line-height: 1em;
+  font-family: Helvetica;
+}
 card quote {
   position: absolute;
   background-color: black;
@@ -208,8 +256,13 @@ card quote {
   font-size: 7pt;
   padding: 4pt;
 }
-card quote source {
+card quote quote-source {
   font-weight: bold;
+}
+card quote .fa-quote-left {
+  opacity: 0.3;
+  position: absolute;
+  font-size: 29pt;
 }
 card footer {
   position: absolute;
@@ -219,4 +272,26 @@ card footer {
   text-align: right;
   font-style: italic;
   color: black;
+}
+card.confederate {
+  color: #bf0a30;
+  box-shadow: 0 0 0 2pt #bf0a30 inset;
+}
+card.confederate picture {
+  border-color: #bf0a30;
+}
+card.confederate quote,
+card.confederate energy {
+  background: #bf0a30;
+}
+card.union {
+  color: #00577a;
+  box-shadow: 0 0 0 2pt #00577a inset;
+}
+card.union picture {
+  border-color: #00577a;
+}
+card.union quote,
+card.union energy {
+  background: #00577a;
 }

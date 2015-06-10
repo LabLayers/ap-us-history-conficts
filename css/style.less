@@ -4,7 +4,7 @@
 @lightGray: #E5ECEF;
 
 @union: #00577A;
-@confederate: #DF000B;
+@confederate: #BF0A30;
 @conflict: #5F006C;
 @misc: black;
 
@@ -26,18 +26,31 @@ card {
   position: relative;
   border: @padding*2.5 solid @lightGray;
   margin: @padding/2;
-  box-shadow: 0 0 0 @padding/2 inset;
+  box-shadow: 0 0 0 @padding/2 black inset;
+  vertical-align: top;
   header {
     display: block;
     padding: @padding*2 @padding @padding 0.6in;
-  name {
+    position: relative;
+    .fa-hand-o-right {
+      opacity: 0.3;
+      position: absolute;
+      font-size: 23pt;
+      left: .158in;
+      top: 0.05in;
+      transform: rotate(-20deg);
+    }
+    name {
       display: block;
       font-family: Clarendon LT Std;
       font-weight: normal;
       font-size: 12pt;
+      margin-top: 1pt;
     }
     nickname {
       display: block;
+      font-family: Georgia;
+      opacity: 0.7;
     }
   }
   type {
@@ -45,14 +58,16 @@ card {
     display: block;
     transform-origin: top left;
     position: absolute;
-    top: 1.4in;
-    left: .1in;
+    top: 1.7in;
+    left: 0.09in;
     font-size: 15pt;
     font-weight: bold;
+    width: 1in;
+    text-align: center;
   }
   energy {
     position: absolute;
-    top: 0.1in;
+    top: 0.25in;
     left: 0.1in;
     width: .4in;
     height: .4in;
@@ -74,6 +89,37 @@ card {
     background-size: cover;
     margin-left: 21pt;
   }
+  content {
+    padding: @padding @padding @padding 21pt;
+    display: block;
+    text-align: left;
+    font-family: Georgia;
+    position: relative;
+    font-size: 9pt;
+    strong {
+      font-family: Lora;
+      font-style: italic;
+      font-weight: bold;
+    }
+    .fa-bolt {
+      opacity: 0.3;
+      position: absolute;
+      font-size: 25pt;
+      left: 0.15in;
+      top: .05in;
+    }
+    code {
+      background-color: black;
+      color: white;
+      border-radius: 50%;
+      width: 1em;
+      display: inline-block;
+      height: 1em;
+      text-align: center;
+      line-height: 1em;
+      font-family: Helvetica;
+    }
+  }
   quote {
     position: absolute;
     background-color: black;
@@ -86,8 +132,13 @@ card {
     font-style: italic;
     font-size: 7pt;
     padding: @padding;
-    source {
+    quote-source {
       font-weight: bold;
+    }
+    .fa-quote-left {
+      opacity: 0.3;
+      position: absolute;
+      font-size: 29pt;
     }
   }
   footer {
@@ -104,9 +155,23 @@ card {
 }
 
 card.confederate {
-  // border-color: @confederate;
+  color: @confederate;
+  box-shadow: 0 0 0 2pt @confederate inset;
+  picture {
+    border-color: @confederate;
+  }
+  quote, energy {
+    background: @confederate;
+  }
 }
 
 card.union {
-  // border-color: @union;
+  color: @union;
+  box-shadow: 0 0 0 2pt @union inset;
+  picture {
+    border-color: @union;
+  }
+  quote, energy {
+    background: @union;
+  }
 }
