@@ -1,0 +1,12 @@
+---
+categories: people
+side: union
+
+name: George Norris
+type: Soldier
+nickname: Craftsman
+
+image: /media/Norris.png
+
+energy: 1
+---
