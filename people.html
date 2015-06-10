@@ -1,0 +1,35 @@
+---
+layout: default
+title: "People"
+---
+
+<!-- Boop -->
+
+{% for card in site.categories.people %}
+  <card class="{{ card.side }}">
+    <header>
+      <name>
+        {{ card.name }}
+      </name>
+      {% if card.nickname %}
+        <nickname>
+          {{ card.nickname }}
+        </nickname>
+      {% endif %}
+    </header>
+    <type>{{ card.type }}</type>
+    <picture style="background-image: url({{ card.image }});"></picture>
+    <energy> {{ card.energy }}</energy>
+    <quote>
+      {{ card.quote }}
+      {% if card.source %}
+        <source>
+          &dash; {{ card.source }}
+        </source>
+      {% endif %}
+    </quote>
+    <footer>
+      {{ site.footer }}
+    </footer>
+  </card>
+{% endfor %}

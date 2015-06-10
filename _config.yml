@@ -7,3 +7,4 @@ gems:
 markdown: kramdown
 permalink: pretty
 exclude: ["node_modules", "Rakefile"]
+footer: Version 1 by Victor Lourng. All images are public domain.

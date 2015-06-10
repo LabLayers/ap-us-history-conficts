@@ -1,12 +1,112 @@
-@import "reset.less"
+@import "reset.less";
+
+@padding: 4pt;
+@lightGray: #E5ECEF;
+
+@union: #00577A;
+@confederate: #DF000B;
+@conflict: #5F006C;
+@misc: black;
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background: white;
   font-family: Lora, Georgia;
+  font-size: 8pt;
+  line-height: 1.25em;
 }
 
 card {
   width: 2.5in;
   height: 3.5in;
   display: inline-block;
+  position: relative;
+  border: @padding*2.5 solid @lightGray;
+  margin: @padding/2;
+  box-shadow: 0 0 0 @padding/2 inset;
+  header {
+    display: block;
+    padding: @padding*2 @padding @padding 0.6in;
+  name {
+      display: block;
+      font-family: Clarendon LT Std;
+      font-weight: normal;
+      font-size: 12pt;
+    }
+    nickname {
+      display: block;
+    }
+  }
+  type {
+    transform: rotate(-90deg);
+    display: block;
+    transform-origin: top left;
+    position: absolute;
+    top: 1.4in;
+    left: .1in;
+    font-size: 15pt;
+    font-weight: bold;
+  }
+  energy {
+    position: absolute;
+    top: 0.1in;
+    left: 0.1in;
+    width: .4in;
+    height: .4in;
+    line-height: .4in;
+    font-size: 1.5em;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: @padding/2 @padding/2 @padding/2 rgba(0,0,0,.25);
+    font-family: Helvetica;
+    font-weight: bold;
+  }
+  picture {
+    border: 2pt solid black;
+    display: block;
+    height: 1.25in;
+    background-position: center;
+    background-size: cover;
+    margin-left: 21pt;
+  }
+  quote {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    border: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 7pt;
+    padding: @padding;
+    source {
+      font-weight: bold;
+    }
+  }
+  footer {
+    position: absolute;
+    // padding: 0 @padding;
+    top: 100%;
+    width: 100%;
+    // margin-top: -1.5pt;
+    font-size: 5pt;
+    text-align: right;
+    font-style: italic;
+    color: black;
+  }
+}
+
+card.confederate {
+  // border-color: @confederate;
+}
+
+card.union {
+  // border-color: @union;
 }

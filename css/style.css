@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: white;
+  font-family: Lora, Georgia;
+  font-size: 8pt;
+  line-height: 1.25em;
+}
+card {
+  width: 2.5in;
+  height: 3.5in;
+  display: inline-block;
+  position: relative;
+  border: 10pt solid #e5ecef;
+  margin: 2pt;
+  box-shadow: 0 0 0 2pt inset;
+}
+card header {
+  display: block;
+  padding: 8pt 4pt 4pt 0.6in;
+}
+card header name {
+  display: block;
+  font-family: Clarendon LT Std;
+  font-weight: normal;
+  font-size: 12pt;
+}
+card header nickname {
+  display: block;
+}
+card type {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  display: block;
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  position: absolute;
+  top: 1.4in;
+  left: .1in;
+  font-size: 15pt;
+  font-weight: bold;
+}
+card energy {
+  position: absolute;
+  top: 0.1in;
+  left: 0.1in;
+  width: .4in;
+  height: .4in;
+  line-height: .4in;
+  font-size: 1.5em;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  box-shadow: 2pt 2pt 2pt rgba(0, 0, 0, 0.25);
+  font-family: Helvetica;
+  font-weight: bold;
+}
+card picture {
+  border: 2pt solid black;
+  display: block;
+  height: 1.25in;
+  background-position: center;
+  background-size: cover;
+  margin-left: 21pt;
+}
+card quote {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  border: 0;
+  left: 0;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: 7pt;
+  padding: 4pt;
+}
+card quote source {
+  font-weight: bold;
+}
+card footer {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  font-size: 5pt;
+  text-align: right;
+  font-style: italic;
+  color: black;
+}
